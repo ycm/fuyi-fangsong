@@ -17,7 +17,7 @@ parser.add_argument('--image_height', type=int, required=True)
 
 **generate images for first 1000 chars in songti**
 ```
-util/create_bitmap_characters.py \
+python util/create_bitmap_characters.py \
     --char_start_decimal 19968 \
     --char_end_decimal 20968 \
     --font_path /usr/share/fonts/noto-cjk/NotoSerifCJK-Regular.ttc \
@@ -29,7 +29,7 @@ util/create_bitmap_characters.py \
 
 **generate images for first 1000 chars in fangsong**
 ```
-util/create_bitmap_characters.py \
+python util/create_bitmap_characters.py \
     --char_start_decimal 19968 \
     --char_end_decimal 20968 \
     --font_path "/home/ycm/.local/share/fonts/Unknown Vendor/TrueType/cwTeX Q FangsongZH/cwTeX_Q_FangsongZH_Medium.ttf" \
