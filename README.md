@@ -15,7 +15,7 @@ parser.add_argument('--font_offset', type=str, required=True)
 parser.add_argument('--out_dir', type=str, required=True)
 parser.add_argument('--image_height', type=int, required=True)
 
-
+**generate images for first 1000 chars in songti**
 ```
 util/create_bitmap_characters.py \
     --char_start_decimal 19968 \
@@ -25,4 +25,16 @@ util/create_bitmap_characters.py \
     --image_height 256 \
     --font_offset -70 \
     --out_dir char/song
+```
+
+**generate images for first 1000 chars in fangsong**
+```
+util/create_bitmap_characters.py \
+    --char_start_decimal 19968 \
+    --char_end_decimal 20968 \
+    --font_path "/home/ycm/.local/share/fonts/Unknown Vendor/TrueType/cwTeX Q FangsongZH/cwTeX_Q_FangsongZH_Medium.ttf" \
+    --font_size 280 \
+    --image_height 256 \
+    --font_offset -8 \
+    --out_dir char/fangsong
 ```
